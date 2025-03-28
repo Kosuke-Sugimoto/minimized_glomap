@@ -1,0 +1,46 @@
+
+Solver Summary (v 2.2.0-eigen-(3.4.0)-lapack-suitesparse-(7.6.1)-eigensparse)
+
+                                     Original                  Reduced
+Parameter blocks                       600035                   600035
+Parameters                             800081                   800081
+Residual blocks                        500012                   500012
+Residuals                             1500036                  1500036
+
+Minimizer                        TRUST_REGION
+Trust region strategy     LEVENBERG_MARQUARDT
+Sparse linear algebra library    SUITE_SPARSE + AMD 
+
+                                        Given                     Used
+Linear solver                    SPARSE_SCHUR             SPARSE_SCHUR
+Visibility clustering         CANONICAL_VIEWS          CANONICAL_VIEWS
+Threads                                     1                        1
+Linear solver ordering              AUTOMATIC            500012,100023
+Schur structure                         3,1,3                    d,d,d
+
+Cost:
+Initial                          5.298510e+09
+Final                            1.289046e+04
+Change                           5.298498e+09
+
+Minimizer iterations                       50
+Successful steps                           50
+Unsuccessful steps                          0
+Line search steps                          54
+
+Time (in seconds):
+Preprocessor                         2.226786
+
+  Residual only evaluation          11.177660 (50)
+    Line search cost evaluation      0.000000
+  Jacobian & residual evaluation   616.990193 (154)
+    Line search gradient evaluation   419.747026
+  Linear solver                     24.644632 (50)
+  Line search polynomial minimization  0.345885
+Minimizer                          659.095905
+
+Postprocessor                        0.036872
+Total                              661.359563
+
+Termination:                      CONVERGENCE (Function tolerance reached. |cost_change|/cost: 8.944770e-07 <= 1.000000e-06)
+
